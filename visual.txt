@@ -1,0 +1,307 @@
+🎮 CORE VISUAL STYLE (IMPORTANT FOUNDATION)
+Rendering Approach
+Top-down 2D (RPG style)
+Tile-based world (grid)
+Pixel-art generated via code (no spritesheets)
+Tile Size
+16x16 or 32x32 pixels (configurable)
+Color Philosophy (VERY IMPORTANT for horror)
+Normal: earthy tones (green, brown, beige)
+Blight: purple-black, sick green glow
+Night: deep blue + high contrast shadows
+🧍 CHARACTER 2D MODEL SYSTEM (PROCEDURAL)
+Base Character Structure
+
+Each character is composed of layered shapes:
+
+[Shadow]
+[Feet]
+[Legs]
+[Body]
+[Arms]
+[Head]
+[Hair / Headgear]
+[Accessory]
+Generation Rules
+1. Body Types
+slim / average / heavy
+height: short / medium / tall
+2. Skin Tone (region-aware)
+light / tan / brown / dark
+slight random tint variation
+3. Face (simple but expressive)
+eyes (2px dots, glow at night for horror)
+mouth (neutral / sad / grin depending sanity)
+4. Hair
+short / long / tied / bald
+color random (natural + rare unnatural for Blight)
+ROLE-BASED VISUAL DIFFERENCE
+
+Each role modifies base model:
+
+Farmer
+straw hat
+dirt stains
+tool (hoe)
+Doctor
+coat (white → turns stained later)
+bag
+glasses
+Guard
+armor padding
+sword / spear
+Thief
+hood
+darker palette
+fast animation
+Herbalist
+leaf accessories
+green tones
+Postman
+satchel
+letter animation idle
+Homeless
+torn clothes
+barefoot
+Vampire
+pale skin
+red eyes
+no shadow (important mechanic)
+Ghost
+semi-transparent
+floating (no walking animation)
+Fox
+4-frame animal animation
+tail physics
+BELIEF-BASED VISUAL EFFECTS
+
+These do NOT change base model but overlay effects:
+
+Old Ways → faint nature aura
+Science → no effect (clear vision)
+Sun God → light glow
+Moon Goddess → shadow trail
+Fatalist → desaturated colors
+Ancestor → ghost silhouettes occasionally appear behind
+🌍 WORLD DESIGN SYSTEM
+WORLD GENERATION (PROCEDURAL)
+Map Type
+Infinite or large chunk-based grid
+Seed-based generation
+Biomes
+Village center
+Farmland
+Forest
+River
+Ruins (underground)
+Graveyard
+TILE TYPES
+
+Each tile = enum + properties:
+
+Grass
+Dirt
+Road
+Water
+Crop soil
+Stone
+Wood floor
+Blight tile (corrupt)
+BLIGHT SYSTEM (CORE HORROR MECHANIC)
+
+Each tile has:
+
+blight_level: 0–100
+
+Effects:
+
+Color shift
+Movement slowdown
+Spawn events
+Crop mutation
+🏠 HOMES SYSTEM
+House Structure (generated)
+
+Each house is:
+
+Rectangle + door + windows
+Interior grid
+House Types
+Poor → small, damaged
+Normal → balanced
+Rich → multi-room
+Interior Objects
+Bed
+Table
+Storage
+Stove
+HOUSE STATES
+Normal
+Abandoned
+Infected (walls pulsate slightly)
+Haunted (object movement)
+🌾 FIELDS & CROPS
+Field System
+
+Tile-based farmland:
+
+Plow → Plant → Grow → Harvest
+Crops
+Normal Crops
+Rice
+Wheat
+Vegetables
+Fruits
+Growth Stages
+seed
+sprout
+half-grown
+mature
+rotten
+BLIGHT EFFECT ON CROPS
+Faster growth
+Wrong shapes
+Toxic harvest
+Moving plants (late-game horror)
+🍲 FOOD SYSTEM
+Food Categories
+Raw
+Cooked
+Special (ritual / corrupted)
+Effects
+Restore stamina
+Heal health
+Side effects (hallucination, poison)
+🧰 ALL GAME ITEMS SYSTEM
+Item Structure
+
+Each item:
+
+id
+name
+type
+durability
+value
+effects
+Item Categories
+Tools
+Hoe
+Axe
+Pickaxe
+Weapons
+Knife
+Sword
+Axe
+Gun (rare)
+Consumables
+Food
+Medicine
+Special
+Letters
+Ritual items
+Keys
+⚔️ WEAPON SYSTEM
+Weapon Stats
+damage
+speed
+durability
+noise (important for events)
+Types
+Melee → silent
+Ranged → loud (attracts danger)
+🗺️ MAP SYSTEM
+Mini Map
+Fog of war
+Updates as explored
+Full Map
+Village zones
+Marked locations
+HOME MARKER SYSTEM
+
+Each player has:
+
+home_position
+marker icon
+States
+safe
+unsafe (night events)
+invaded
+🌦️ SEASONS SYSTEM
+Seasons
+Summer
+Monsoon
+Autumn
+Winter
+Effects
+Summer
+fast crop growth
+heat fatigue
+Monsoon
+flooding
+crops boosted or destroyed
+Autumn
+harvest bonus
+festivals
+Winter
+slow movement
+disease increase
+BLIGHT + SEASONS
+spreads faster in monsoon
+hides in winter
+mutates in autumn
+🧱 COLLISION SYSTEM
+Collision Types
+Solid (walls, trees)
+Semi (crops, grass)
+None (ghost, effects)
+Special Cases
+Ghost
+ignores collision
+Fox
+small hitbox (can pass gaps)
+Blight Tiles
+slow movement
+🎯 INTERACTION SYSTEM
+Player Actions
+move
+interact
+attack
+harvest
+talk
+Interaction Rules
+must face object
+must be in range
+stamina cost
+🧠 NPC SYSTEM (BRIEF)
+Daily routine
+Needs (hunger, sleep)
+Relationships
+Hidden traits
+🌑 HORROR VISUAL EFFECTS
+Dynamic Effects
+screen flicker
+shadow movement
+sound triggers
+UI distortion
+🔄 EVENT SYSTEM IN WORLD
+robberies at night
+NPC fights
+disappearances
+letters arriving
+🧩 HOW EVERYTHING FITS TO CODE (NEXT STEP)
+
+Each system becomes a module:
+
+world_generator
+character_renderer
+tile_system
+item_system
+collision_system
+season_system
+blight_system
+
+All plug into:
+
+engine.core
+manager
+events

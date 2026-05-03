@@ -1,0 +1,198 @@
+Here is a horror storyline framework built to fit **Witherbloom Vale** as described in your attachment: a survival game with a living village, the **Blight**, belief-based dialogue, role-based starts, and supernatural classes. 
+
+## Core horror premise
+
+**Witherbloom Vale** is a beautiful village built on top of something buried.
+
+Long ago, the valley was sealed after a mass death event called **the First Withering**. The people who survived did not destroy the evil inside the land. They only taught it to sleep. Now the **Blight** is waking again, and it does not just rot crops or bodies, it learns people’s fears, customs, guilt, and secrets. Every character the player chooses is already connected to the valley in a different way, so every story begins with a different wound.
+
+The horror is not only monsters. It is:
+
+* mistrust between neighbors,
+* missing people who still appear in dreams,
+* family traditions that may be protective or cursed,
+* the village changing depending on who you are,
+* and the terrifying feeling that the valley knows your name before you arrive.
+
+## Main story structure
+
+### Act 1: Arrival
+
+The player enters Witherbloom Vale during a period of strange festivals, funerals, and disappearances. Depending on the character, the arrival scene changes.
+
+A farmer may arrive to reclaim family land.
+A doctor may arrive after hearing of a strange sickness.
+A postman may bring a letter that should not exist.
+A thief may be running from someone already in the vale.
+A vampire may be following a blood rumor.
+A ghost may awaken tied to the valley itself.
+
+At first, the village looks normal. People work, trade, pray, argue, and celebrate. But at night:
+
+* lamps go out by themselves,
+* animals refuse to cross certain roads,
+* villagers hear knocking from empty walls,
+* and some NPCs wake up with dirt under their nails as if they had been walking in their sleep.
+
+The player learns the first rule of the valley: **whatever the Blight touches, it remembers**.
+
+### Act 2: The village begins to split
+
+Different beliefs, classes, and backgrounds create different story branches. The village slowly divides into people who think:
+
+* the Blight is a disease,
+* a punishment,
+* a spirit,
+* a curse,
+* or a government lie.
+
+This act focuses on distrust. The player starts seeing different horror depending on who they are:
+
+* Some characters see dead relatives.
+* Some hear their own voice calling from the forest.
+* Some find letters written in their handwriting.
+* Some NPCs accuse the player of crimes they have not committed.
+* Some children say they met “the second version” of someone in the woods.
+
+A hidden truth begins to form: the valley is not only infected. It is **feeding on memory and identity**.
+
+### Act 3: The buried truth
+
+The player discovers the old sealed places under the vale: wells, catacombs, sinkholes, abandoned shrines, flooded mines, and the ruins of the original settlement.
+
+There, the truth is revealed:
+The Blight was created long ago by an attempt to preserve life, memory, and ancestry after a disaster. The ritual failed. It did not kill the valley. It made the valley absorb the dead, the grief, and the unfinished lives of the villagers.
+
+That is why different characters experience different horrors:
+
+* your beliefs shape what the Blight shows you,
+* your job determines where you can investigate,
+* your class affects who trusts you,
+* your cultural background affects what symbols, rites, or taboos unlock hidden paths,
+* and your personal history determines what the valley uses against you.
+
+At this stage the player realizes the true enemy may be a living intelligence hidden in the land: **the Hollow Root**, the source of the Blight, which wears the faces of the dead to lure people deeper.
+
+### Act 4: The choice
+
+The final act branches into endings based on the player’s character, actions, and relationships.
+
+Possible endings:
+
+* **Burn the Vale**: destroy the cursed land, but lose the village and everyone trapped in it.
+* **Seal the Hollow Root**: preserve the village, but leave the Blight alive beneath it.
+* **Cure the Blight**: possible only if the player has collected enough knowledge, trust, and ritual pieces.
+* **Become the Keeper**: sacrifice your identity and become the new guardian of the seal.
+* **Let it awaken**: a bad ending where the valley consumes the outside world through dreams, roads, and returning villagers.
+
+## How each character gets a different story
+
+Use **three layers** of variation for every playthrough:
+
+### 1. Origin background
+
+This changes the first chapter, NPC reactions, family ties, and starting fear.
+
+Examples:
+
+* A character from a strict religious family hears the Blight as a test of faith.
+* A character from a farming family sees it as famine and rot.
+* A character from a scholarly family treats it as a biological anomaly.
+* A character from a poor migrant family sees the village as a place of survival, not safety.
+* A character from a fishing or river community notices water behaving strangely.
+* A character from a hunter or forest community recognizes the old symbols earlier than others.
+
+This makes ethnicity and culture matter through **customs, memory, language, and ritual**, not through stereotypes.
+
+### 2. Role or work
+
+This changes the gameplay route and the horror scenes the player unlocks.
+
+Examples:
+
+* **Farmer**: sees the infection first in crops, soil, and livestock.
+* **Herbalist**: discovers the Blight can imitate healing plants.
+* **Doctor**: uncovers symptoms no one else can measure.
+* **Postman**: receives cursed letters and secret confessions.
+* **Newspaperman**: learns the village is hiding multiple murders.
+* **Guard**: investigates nighttime violence and missing patrols.
+* **Thief / robber**: finds hidden routes, black-market secrets, and prison horror.
+* **Artisan**: notices cursed objects changing shape.
+* **Shopkeeper’s child**: overhears trade, debt, blackmail, and family corruption.
+* **Homeless / outcast / patient**: sees the village from the margins and gets the darkest truths first.
+* **Magician’s apprentice**: can sense distortions in reality.
+* **Vampire**: becomes tied to blood, hunger, and moonlit corruption.
+* **Ghost**: can witness the past and walk through sealed places.
+* **Fox**: experiences the world as a hunted animal and uncovers wilderness routes.
+* **Chronicler’s kin**: directly senses the valley is rewriting the story itself.
+
+### 3. Belief system
+
+This changes hallucinations, dialogue, rituals, and the final ending path.
+
+Examples:
+
+* **Old Ways**: the valley appears as angry spirits and broken taboos.
+* **Person of Science**: the valley behaves like a living disease with impossible biology.
+* **Sun God devotee**: the horror centers on judgment, purity, and corruption.
+* **Moon Goddess follower**: secrets, doubles, dreams, and hidden identities dominate.
+* **Ancestor worshipper**: the dead are never fully gone, and the family line matters.
+* **Fatalist**: the game constantly asks whether anything could have been changed.
+* **Aspirant**: wealth, trade, and ambition gradually reveal their price.
+* **Muslim / Christian / other faith-based NPCs**: different rites, mourning customs, and moral choices affect trust, burial, prayer, and protection.
+
+## Sample character storylines
+
+### Farmer story
+
+The farmer’s land is the first place the Blight spreads. The soil bleeds black water, crops grow too fast, and harvested grain whispers at night. The player learns the valley has been feeding on the dead buried under the fields.
+
+### Doctor story
+
+The doctor discovers the “sickness” is not one illness but many overlapping symptoms from one source. Patients remember events that never happened. Some heal, but lose pieces of their identity. The doctor may become the only person who can tell whether someone is alive, changed, or already replaced.
+
+### Postman story
+
+The postman receives letters from people who died years ago. Some letters warn of future deaths. Some are signed by villagers who deny writing them. The postman becomes a key witness to the valley’s time distortion.
+
+### Thief story
+
+The thief enters the darker side of the village: smuggling tunnels, prison cells, hidden shrines, and locked family vaults. Their horror is social and physical. They learn that every rich house in the vale is built on a secret, and every secret has teeth.
+
+### Ghost story
+
+The ghost story is the most tragic. The player remembers fragments of life while wandering through walls, graves, and dreams. They discover they may have died because they tried to stop the First Withering. Their goal becomes to uncover who betrayed them.
+
+### Vampire story
+
+The vampire is both predator and victim. The Blight recognizes them as kin. Their blood hunger reveals hidden truths, but every feeding pulls them closer to becoming an avatar of the Hollow Root.
+
+## The village’s big secret
+
+The true horror is that the village has been **rewriting people into roles** for generations.
+
+The Blight does not just kill. It assigns meaning:
+
+* a guard becomes a silent statue of duty,
+* a mother becomes a mourning saint,
+* a thief becomes a necessary villain,
+* a child becomes a witness,
+* a doctor becomes a liar,
+* a priest becomes a gatekeeper,
+* and the player becomes the next story the valley wants to tell.
+
+That is why each playthrough must feel different. The game should not ask, “Can you survive the horror?” It should ask, **“What part of yourself will the valley turn into a legend?”**
+
+## Best format for gameplay writing
+
+For your game, every character route can follow this structure:
+
+* **Origin scene**: who they are and why they came.
+* **Personal fear**: what the Blight targets first.
+* **Role questline**: unique missions based on job.
+* **Belief questline**: unique rituals, logic, or moral choices.
+* **Village conflict**: how NPCs treat them.
+* **Truth reveal**: what they uncover about the Blight.
+* **Final choice**: destroy, seal, cure, inherit, or submit.
+
+If you want, I can turn this into a **full chapter-by-chapter story campaign** for all major character types in your attachment.

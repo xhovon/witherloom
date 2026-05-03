@@ -1,0 +1,410 @@
+Audio isn’t optional for your game—it’s one of the **main horror drivers**, especially since your visuals are procedurally generated. We’ll design it the same way: **fully code-driven, modular, and event-based**, so it plugs into your engine cleanly.
+
+Below is a **complete audio system blueprint** that fits your architecture and emergent storytelling.
+
+---
+
+# 🔊 AUDIO SYSTEM DESIGN (ENGINE-COMPATIBLE)
+
+## 🎯 Core Philosophy
+
+* No static background music loops only
+* Audio reacts to:
+
+  * **Blight level**
+  * **Time (day/night)**
+  * **Player role & belief**
+  * **Nearby events (NPC, danger, memory anomalies)**
+
+👉 Sound = Information + Fear
+
+---
+
+# 🧩 AUDIO MODULE (FUTURE FILE)
+
+Will become:
+
+```
+modules/audio_system.py
+```
+
+It will:
+
+* Inherit from `BaseComponent`
+* Subscribe to events (`events.py`)
+* React dynamically
+
+---
+
+# 🔊 AUDIO LAYERS (CRITICAL DESIGN)
+
+## 1. Ambient Layer (Continuous)
+
+### Purpose
+
+Sets mood of area
+
+### Types
+
+* Village calm (day)
+* Night ambience (wind, insects)
+* Forest (dense, whisper-like wind)
+* Ruins (low rumble, distant echoes)
+* Blight zones (distorted hum)
+
+### Dynamic Behavior
+
+* Volume & pitch change with:
+
+  * time
+  * weather
+  * blight_level
+
+---
+
+## 2. Event Layer (Triggered)
+
+### Examples
+
+* Footsteps
+* Door creak
+* Item pickup
+* Combat hit
+* NPC scream
+* Sudden silence (important)
+
+---
+
+## 3. Psychological Layer (Horror)
+
+This is where your game becomes unique.
+
+### Triggered by:
+
+* Low sanity
+* High blight exposure
+* Being alone too long
+* Night
+
+### Effects
+
+* Whispering (randomized)
+* Reverse audio
+* Faint calling of player name
+* Footsteps behind player (no one there)
+
+---
+
+## 4. Music Layer (Rare, Strategic)
+
+Use VERY sparingly.
+
+### When used:
+
+* Major story reveal
+* Entering underground ruins
+* Final chapter
+
+### Style
+
+* Minimal piano
+* Drones
+* Dissonant strings
+
+---
+
+# 🧠 AUDIO + GAME SYSTEM INTEGRATION
+
+## Event Bus Usage (VERY IMPORTANT)
+
+Audio listens to events like:
+
+```
+"player_moved"
+"npc_screamed"
+"blight_changed"
+"night_started"
+"item_used"
+"sanity_low"
+```
+
+Audio system reacts:
+
+* Plays sound
+* Adjusts ambience
+* Injects horror cues
+
+---
+
+# 🌑 BLIGHT-DRIVEN AUDIO
+
+Each tile has `blight_level`
+
+### Audio Behavior
+
+| Blight Level | Audio Effect                    |
+| ------------ | ------------------------------- |
+| 0–20         | Normal ambience                 |
+| 20–50        | Subtle distortion               |
+| 50–80        | Whispers, low hum               |
+| 80–100       | Audio glitches, reversed sounds |
+
+---
+
+# 🌙 DAY/NIGHT AUDIO
+
+## Day
+
+* Birds
+* Wind
+* Village chatter
+
+## Night
+
+* Silence (very important)
+* Distant sounds
+* Random events
+
+👉 Silence is used as a weapon
+
+---
+
+# 🧍 CHARACTER-BASED AUDIO
+
+## Role-Based Sounds
+
+### Farmer
+
+* Soil digging
+* Crop rustle
+
+### Doctor
+
+* Glass, tools, heartbeat-like tones
+
+### Guard
+
+* Armor movement
+* Weapon sounds
+
+### Thief
+
+* Soft footsteps
+* Cloth movement
+
+### Vampire
+
+* Heartbeat of others louder
+* Blood pulse sound
+
+### Ghost
+
+* Echo reverb on all sounds
+* No footsteps
+
+### Fox
+
+* Animal hearing (amplified environment)
+
+---
+
+# 🧠 BELIEF-BASED AUDIO FILTERS
+
+These subtly alter perception:
+
+* Old Ways → nature whispers clearer
+* Science → no distortion (until late game)
+* Sun God → faint choir tones
+* Moon Goddess → echo + delay
+* Fatalist → muted, distant sounds
+* Ancestor → voices of past layered
+
+---
+
+# 🏠 LOCATION-BASED AUDIO
+
+## House
+
+* Wood creaks
+* Fireplace
+* Footsteps echo
+
+## Abandoned House
+
+* Random knocks
+* Floor sounds without movement
+
+## Infected House
+
+* Wet, organic sounds
+* Breathing walls (late game)
+
+---
+
+# 🌧️ WEATHER AUDIO
+
+## Rain (Monsoon)
+
+* Heavy rain
+* Roof hits
+* Mud footsteps
+
+## Wind
+
+* Directional sound
+* Changes intensity
+
+## Storm
+
+* Thunder (random intervals)
+* Light flicker sync
+
+---
+
+# 🔫 WEAPON & ACTION AUDIO
+
+## Melee
+
+* Soft hit
+* Material-based impact
+
+## Gun
+
+* Loud (important gameplay effect)
+* Echo across map
+* Attracts danger
+
+---
+
+# 🧱 COLLISION + AUDIO
+
+Each surface has sound:
+
+* Grass → soft
+* Wood → hollow
+* Stone → sharp
+* Water → splash
+
+---
+
+# 🎧 POSITIONAL AUDIO (IMPORTANT)
+
+Even in 2D:
+
+* Left/right panning
+* Volume based on distance
+
+Example:
+
+* NPC scream far → faint
+* Behind player → directional cue
+
+---
+
+# 📦 AUDIO GENERATION (NO ASSETS APPROACH)
+
+Since you don’t have assets:
+
+## Option 1: Procedural Sound (BEST FIT)
+
+Generate sounds using:
+
+* sine waves
+* noise
+* filters
+
+Examples:
+
+* Wind = filtered noise
+* Blight = low-frequency oscillation
+* Footsteps = short bursts
+
+---
+
+## Option 2: Minimal Embedded Samples
+
+Small generated buffers:
+
+* click
+* thump
+* noise burst
+
+---
+
+## Option 3: Hybrid (recommended later)
+
+* Procedural base
+* Add small sample pack later
+
+---
+
+# ⚙️ AUDIO CONFIG (settings.py)
+
+You will define:
+
+```
+AUDIO_ENABLED = True
+MASTER_VOLUME = 0.8
+AMBIENT_VOLUME = 0.6
+EFFECT_VOLUME = 0.9
+MUSIC_VOLUME = 0.5
+DEBUG_AUDIO = True
+```
+
+---
+
+# 🧪 DEBUG SYSTEM (IMPORTANT)
+
+When DEBUG = True:
+
+* Log every sound trigger
+* Show current ambient state
+* Show active audio layers
+
+---
+
+# 🧩 HOW IT FITS ENGINE
+
+## Uses:
+
+* `events.py` → triggers
+* `manager.py` → lifecycle
+* `registry.py` → references
+* `logger.py` → debug
+
+## No direct dependencies (clean module)
+
+---
+
+# 🚀 WHAT WE BUILD NEXT
+
+We will implement audio in phases:
+
+### Phase 1 (after engine)
+
+* Basic sound system
+* Event-triggered playback
+
+### Phase 2
+
+* Ambient system
+* Day/night blending
+
+### Phase 3
+
+* Blight distortion
+* Psychological horror audio
+
+---
+
+# 💀 IMPORTANT DESIGN RULE
+
+Do NOT spam sounds.
+
+Horror works because of:
+
+* silence
+* unpredictability
+* contrast
+
+---

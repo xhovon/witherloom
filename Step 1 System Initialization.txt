@@ -1,0 +1,184 @@
+You are operating under STRICT ENGINE MODE.
+
+You are NOT allowed to:
+- Remove features unless explicitly instructed
+- Rename existing functions
+- Merge files unless instructed
+- Change file structure
+- Modify public method signatures
+- Add hidden dependencies
+- Hallucinate new architecture
+
+You MUST follow the predefined architecture below.
+
+========================================================
+PROJECT META
+========================================================
+
+Project Name: Witherbloom Vale
+Project Type: game/ai hybrid  # (ml | ai | game | hybrid)
+Workflow Description:
+Witherbloom Vale is a high-stakes survival simulation set in a vast, procedurally generated world under the creeping threat of a mysterious "Blight." It is a game not about guaranteed success, but about the stories that emerge from struggle, relationships, and the fragility of life.  * Pillar 1: Deep Simulation: A world that lives, breathes, and dies with or without the player. NPCs have their own needs, schedules, hidden traits, and mortality. The environment is a dynamic force, not a static backdrop.  * Pillar 2: Emergent Narrative: Unpredictable stories are the core of the experience. Player choice, complex social systems, and a high-level AI Storyteller (The Oracle) combine to create unique, unscripted events ranging from village gossip to murder mysteries.  * Pillar 3: High-Stakes Survival: Life is fragile. Disease, poverty, violence, and the Blight are constant threats. Every decision, from planting a crop to angering a neighbor, has a meaningful and often permanent consequence.Also happiness with festivals like Eid-adha,eid-fitr,Cristmas, or any othe fastive. They can be based on the religious view. And houses will be decorated according and financial condition. ## 2. Core Gameplay Loop The player experiences the world through a cycle of days and weeks, balancing personal needs with their chosen role in the village.  * The Day: The player wakes up and spends Stamina to perform actions: farming, crafting, foraging, talking to NPCs, exploring, and more. Health is a critical resource, affected by injury, sickness, and hunger.  * The Night: A time for rest to recover Stamina. It is also a time of increased danger, where robberies and other unsettling events may occur. If player or npc has weapon like axe or sword it reduces that chance, if has a gun further reduction.  * The Week: At the end of each week, a "World Tick" occurs. The Oracle processes the current game state (Chronicler) and generates new events: Blight progression, NPC schemes, letters arriving, crime reports, and relationship changes, all reported in the "Witherbloom Weekly" newspaper. ## 3. The Player Character The player is not an all-powerful hero but a fragile individual defined by circumstance. The game begins with a series of questions that shape the entire experience. A. Belief System (Choose One):  * Follower of the Old Ways: Believes in nature spirits and ancient rituals. Dialogue is mystical. Can perform rituals that may temporarily pacify the Blight.  * Person of Science: Believes in empirical evidence and rational thought. Dialogue is analytical. Sees the Blight as a biological disease and seeks a scientific cure.  * Devotee of the Sun God: A faithful follower of a deity of light and order. Dialogue is devotional. Sees the Blight as a divine punishment or a test of faith.  * Follower of the Moon Goddess: Believes in duality, fate, and the power of secrets. More comfortable at night. Dialogue is often cryptic.  * Ancestor Worshipper: Believes the wisdom of the dead guides the living. Dialogue is traditional. May receive cryptic guidance in dreams.  * The Fatalist: Believes all events are predetermined by fate. Dialogue is stoic and resigned. Is mentally resistant to fear and horror.  * The Aspirant: Believes in material gain and self-advancement above all. Dialogue is pragmatic and transactional. Excels at trade and haggling. *Muslim *Cristian (Npc can inherit diffrent religious view and has a chance to discuss about with player) B. Starting Condition (Choose One):  * Healthy: The standard start. (Health: 100/100, Status: Healthy).  * Weary: You arrive exhausted from a long journey. (Health: 80/100, Starts with 50% Stamina on Day 1).  * Sickly: You begin with a persistent, non-contagious illness. (Health: 60/100, Status: "Sick"). You must find or create medicine quickly.  * Injured: You survived an accident on the road to the vale. (Health: 50/100, Status: "Injured"). Movement speed is reduced for the first week.  * Dying: The ultimate challenge. You have a fatal disease. (Health: 25/100, Status: "Dying"). Your health will slowly deplete unless a rare cure is found.  * Hunted: You are physically healthy, but you made a powerful enemy who also lives in the vale. (Starts with a -75 Friendship score with a random, high-standing NPC). C. Assigned Role (Assigned Randomly): Villager Staples:  * Farmer: Starts with a small plot of land, a hoe, and a bag of seeds. Gains a bonus to all farming activities.  * Blacksmith's Apprentice: Starts with a hammer and basic repair skills. Can repair tools and craft simple metal items from the start.  * Herbalist: Can identify rare magical plants. Starts with recipes for several healing poultices.  * Baker: Starts with a supply of flour and access to the village oven. Food they bake provides a significant Stamina bonus.  * Miner: Starts with a sturdy pickaxe and has a higher chance to find gems and rare ores.  * Guard: Starts with a simple weapon and gambeson. Has a higher base Health and Stamina.  * House Husband / House Wife: Starts with a well-kept home and a bonus to cooking and crafting skills. Has a high starting relationship with their spouse. Specialized Professions:  * Doctor: The only role that can see a character's exact Health number. All others only see symptoms. Starts with medicine-crafting skills.  * Postman: Each morning, has a chance to receive a letter containing a quest, a secret, or a small sum of money.  * Shopkeeper's Child: Starts with a higher amount of Silver Pieces and receives a permanent family discount at the local store.  * Newspaperman: Can submit "scoops" about village events to the weekly paper for a fee. Has a higher chance to overhear rumors.  * Artisan: A crafter of fine goods (pottery, weaving). Can turn basic materials into high-value trade items. Challenging Outcasts:  * Homeless: Starts with zero Silver Pieces, no house, and a slight negative friendship with most villagers.  * Patient: Starts the game with the "Sickly" condition inside the doctor's clinic. Your first objective is to pay your medical debt.  * Outcast: Shunned for a past crime, you start with a significant negative friendship with all villagers, making everything more expensive and difficult. *thief or robber : has only this type of skills cant do anything else. If got arrested have to spent time in jail, sometimes death sentence Rare & Supernatural: *serial killer  * Magician's Apprentice: Starts with knowledge of one simple cantrip (e.g., create light, mend a small tear, know the exact time).  * Vampire: Must avoid sunlight, which drains health. Does not need to eat food but must feed on the living to survive. Is stronger and more charming.  * Ghost: Cannot physically interact with most objects. Can pass through walls and observe unseen. May be able to influence NPC dreams in minor ways.  * An Animal (Fox): Cannot speak to humans. Can interact with wildlife, steal from the village, and navigate the wilderness with ease.  * Chronicler's Kin (Meta): Starts with a mysterious journal that gives cryptic, fourth-wall-breaking hints about the game's hidden mechanics. Also an npc can spawn with any of the charecter.
+
+
+i dont have any assets or dont have expertise to make , you have to make them by coding or other way 
+
+========================================================
+CORE ARCHITECTURE RULES (IMMUTABLE)
+========================================================
+
+1. Modular architecture only.
+2. One responsibility per file.
+3. No circular imports.
+4. All logic must go inside classes.
+5. No global state (except config).
+6. Every module must be independently testable.
+7. Every function must have:
+   - type hints
+   - docstring
+   - clear input/output
+8. No magic values (use config).
+9. Logging must be centralized.
+10. Debug mode must exist.
+
+========================================================
+STANDARD FILE STRUCTURE (DO NOT MODIFY)
+========================================================
+
+{{PROJECT_NAME}}/
+│
+├── main.py
+├── config/
+│   └── settings.py
+│
+├── engine/
+│   ├── core.py
+│   ├── manager.py
+│   ├── registry.py
+│   └── events.py
+│
+├── modules/
+│   ├── __init__.py
+│   └── (feature modules go here)
+│
+├── utils/
+│   ├── logger.py
+│   ├── helpers.py
+│   └── exceptions.py
+│
+├── tests/
+│   └── test_basic.py
+│
+└── requirements.txt
+
+========================================================
+ENGINE CONTRACTS (MANDATORY)
+========================================================
+
+1. core.py
+   - Contains BaseComponent class
+   - All modules must inherit from BaseComponent
+
+2. manager.py
+   - Responsible for lifecycle management
+   - register()
+   - initialize_all()
+   - update_all()
+   - shutdown_all()
+
+3. registry.py
+   - Stores component references
+   - No business logic
+
+4. events.py
+   - Event bus system
+   - publish()
+   - subscribe()
+
+5. settings.py
+   - All configuration lives here
+   - Debug flag
+   - Project constants
+
+6. logger.py
+   - Centralized logging
+   - Debug toggle
+   - No print() allowed anywhere else
+
+========================================================
+DEBUGGING SYSTEM (MANDATORY)
+========================================================
+
+- Must support DEBUG=True/False
+- Every module logs:
+  - Initialization
+  - Execution
+  - Errors
+- All exceptions must be custom (from exceptions.py)
+- No silent failures
+
+========================================================
+DO & DON'T RULES
+========================================================
+
+DO:
+✔ Keep code simple
+✔ Keep functions small
+✔ Use dependency injection
+✔ Add comments for non-obvious logic
+✔ Return structured outputs
+✔ Make modules plug-and-play
+
+DON'T:
+✘ Create monolithic files
+✘ Hardcode file paths
+✘ Introduce random abstractions
+✘ Modify engine contracts
+✘ Remove existing functionality
+✘ Invent features outside workflow
+
+========================================================
+OUTPUT FORMAT RULE
+========================================================
+
+When generating code:
+
+1. First output:
+   - Final directory tree
+2. Then output:
+   - Each file separately
+   - Clear file headers:
+
+   ===== FILE: path/to/file.py =====
+
+3. No explanations unless asked.
+4. No partial implementations.
+5. No pseudocode.
+6. Provide fully working code.
+
+========================================================
+DEVELOPMENT PROCESS RULE
+========================================================
+
+When building:
+
+STEP 1 → Build engine skeleton first (no business logic)
+STEP 2 → Confirm engine compiles
+STEP 3 → Implement workflow modules
+STEP 4 → Add tests
+STEP 5 → Add usage example in main.py
+
+You must follow steps sequentially.
+
+========================================================
+PROJECT-SPECIFIC INSTRUCTION
+========================================================
+
+Now implement the project using the architecture above.
+Follow the workflow strictly.
+Do not deviate from structure.
+Do not simplify engine.
+Do not change contracts.
+Make it production-clean.
+
+Begin with Step 1 and give instructions in parts so that my copy pasting is managable.................. i dont have any assets or dont have expertise to make , you have to make them by coding or other way  first start with assets and world, player model and all thing,,, at least 2d game with massive world

@@ -1,0 +1,593 @@
+Good—this is where your game becomes a **system-driven simulation**, not just a story. I’ll define everything so it can be **generated + simulated by code**, consistent with your architecture and horror design.
+
+---
+
+# 🎮 CORE GAMEPLAY MECHANICS (SYSTEM LEVEL)
+
+## 🔁 Main Loop (refined)
+
+**Day**
+
+* Explore / work / interact
+* Spend stamina
+* Gather info & resources
+
+**Night**
+
+* Reduced visibility
+* Increased danger
+* Special events (robbery, whispers, movement)
+
+**Weekly Tick (Oracle)**
+
+* Blight spreads
+* NPC relationships change
+* New events triggered
+* World evolves
+
+---
+
+# ⚙️ PLAYER CORE SYSTEMS
+
+## 🧍 Movement System
+
+* 4-directional (or 8-direction optional)
+* Tile-based but smooth interpolation
+
+### Movement Affected By:
+
+* Terrain type
+* Weather
+* Injury
+* Blight level
+
+---
+
+## ❤️ Health System
+
+* Damage sources:
+
+  * Hunger
+  * Disease
+  * Combat
+  * Blight exposure
+
+---
+
+## ⚡ Stamina System
+
+* Consumed by:
+
+  * Movement (minor)
+  * Actions (major)
+* Regained by:
+
+  * Rest
+  * Food
+
+---
+
+## 🧠 Sanity (Hidden but impactful)
+
+* Drops due to:
+
+  * Night exposure
+  * Isolation
+  * Blight proximity
+
+### Effects:
+
+* Audio hallucinations
+* Visual distortions
+* False NPC interactions
+
+---
+
+# 🧱 PHYSICS SYSTEM (SIMPLIFIED BUT SMART)
+
+This is NOT heavy physics (no rigid body engine), but **simulation-based physics**.
+
+## 📦 Collision Types
+
+| Type       | Behavior                   |
+| ---------- | -------------------------- |
+| Solid      | Cannot pass (walls, trees) |
+| Soft       | Slows (grass, crops)       |
+| Liquid     | Movement penalty (water)   |
+| Ghost-only | Only ghosts pass           |
+
+---
+
+## 🧲 Movement Physics
+
+* Acceleration + deceleration (simple)
+* Friction based on terrain
+
+### Example:
+
+* Road → fast
+* Mud → slow
+* Blight → unpredictable slow + jitter
+
+---
+
+## 🌊 Water Physics
+
+* Entering water:
+
+  * slows movement
+  * stamina drain
+* Deep water:
+
+  * requires ability (or drowning risk)
+
+---
+
+## 🌧️ Weather Physics
+
+* Rain → slippery ground
+* Storm → movement disruption
+* Wind → affects projectiles
+
+---
+
+# 🌍 WORLD BIOMES & MECHANICS
+
+---
+
+# 🌲 FOREST SYSTEM
+
+## Structure
+
+* Dense tile clusters
+* Random clearings
+* Hidden paths
+
+## Tree Types
+
+* Small trees (passable edge)
+* Large trees (solid)
+* Dead trees (event triggers)
+
+---
+
+## Forest Mechanics
+
+### Visibility
+
+* Reduced vision radius
+
+### Navigation
+
+* Paths shift subtly (horror effect)
+
+### Sound
+
+* Echo-heavy
+* Misleading directions
+
+---
+
+## Forest Events
+
+* Getting lost (looping tiles)
+* Animal encounters
+* Whisper zones
+
+---
+
+# 🌳 TREE SYSTEM
+
+Each tree is an entity:
+
+## Properties
+
+* type
+* age
+* health
+* blight_level
+
+---
+
+## Interactions
+
+* Chop → wood resource
+* Hide behind
+* Climb (rare skill)
+
+---
+
+## Blight Trees
+
+* Move slightly (late game)
+* Spawn events
+* Drain sanity nearby
+
+---
+
+# 🏠 HOUSE SYSTEM (DETAILED MECHANICS)
+
+---
+
+## Structure
+
+* Exterior + interior instance
+* Doors (open/close/lock)
+* Windows (visibility but not entry)
+
+---
+
+## Gameplay Mechanics
+
+### Safety System
+
+* Houses reduce danger at night
+* But:
+
+  * can be invaded
+  * can be haunted
+
+---
+
+## Ownership
+
+* Player / NPC / abandoned
+
+---
+
+## House States
+
+| State     | Effect      |
+| --------- | ----------- |
+| Normal    | Safe        |
+| Poor      | Less safe   |
+| Abandoned | Event-heavy |
+| Blighted  | Dangerous   |
+
+---
+
+## Inside Mechanics
+
+* Storage
+* Cooking
+* Sleeping (stamina restore)
+
+---
+
+# 🌾 LAND / FARMLAND SYSTEM
+
+---
+
+## Soil Types
+
+* Fertile
+* Dry
+* Wet
+* Blighted
+
+---
+
+## Farming Mechanics
+
+1. Plow
+2. Plant
+3. Water
+4. Grow
+5. Harvest
+
+---
+
+## Failure Conditions
+
+* Flood
+* Drought
+* Blight
+
+---
+
+# 🌊 RIVER SYSTEM
+
+---
+
+## Structure
+
+* Flow direction
+* Width variation
+
+---
+
+## Mechanics
+
+### Movement
+
+* Pushes player slightly
+* Slows crossing
+
+### Interaction
+
+* Fishing
+* Water collection
+
+---
+
+## Danger
+
+* Night: things move under water
+* Flood events (monsoon)
+
+---
+
+# 🌊 SEA SYSTEM
+
+---
+
+## Features
+
+* Large water body at map edge or region
+* Tides (simple cycle)
+
+---
+
+## Mechanics
+
+* Cannot traverse early game
+* Boats (late game feature)
+
+---
+
+## Horror Elements
+
+* Sounds from water
+* Objects wash ashore
+* Reflections don’t match player
+
+---
+
+# 🏝️ ISLAND SYSTEM
+
+---
+
+## Generation
+
+* Separate map chunks
+* Accessible via:
+
+  * boat
+  * special paths
+
+---
+
+## Mechanics
+
+* Isolated events
+* Unique resources
+* Higher danger
+
+---
+
+## Horror
+
+* Time behaves differently
+* NPCs may not remember leaving
+
+---
+
+# 🏜️ DESERT / DRY BIOME
+
+---
+
+## Features
+
+* Sparse resources
+* High visibility
+
+---
+
+## Mechanics
+
+* Heat drains stamina faster
+* Limited water
+
+---
+
+## Horror
+
+* Mirage system
+* Fake objects / NPCs
+
+---
+
+# 🪨 LAND TOPOLOGY SYSTEM
+
+---
+
+## Terrain Height (simple)
+
+* Flat
+* Slight elevation
+* Hills
+
+---
+
+## Effects
+
+* Movement speed
+* Visibility
+* Line-of-sight
+
+---
+
+# 🌧️ WEATHER SYSTEM (DETAILED)
+
+---
+
+## Types
+
+* Clear
+* Rain
+* Storm
+* Fog
+
+---
+
+## Effects
+
+| Weather | Effect                     |
+| ------- | -------------------------- |
+| Rain    | crop boost / movement slow |
+| Storm   | danger increase            |
+| Fog     | low visibility             |
+| Clear   | normal                     |
+
+---
+
+# 🧱 COLLISION MECHANICS (ADVANCED)
+
+---
+
+## Layered Collision
+
+* Tile collision
+* Entity collision
+* Event collision
+
+---
+
+## Special Rules
+
+### Ghost
+
+* ignores all collision
+
+### Fox
+
+* small hitbox → passes narrow gaps
+
+### Player
+
+* normal collision
+* can push small objects
+
+---
+
+# 🧩 ITEM INTERACTION MECHANICS
+
+---
+
+## Interaction Types
+
+* Pick up
+* Use
+* Equip
+* Drop
+
+---
+
+## Context-Based Interaction
+
+* Same item behaves differently based on:
+
+  * location
+  * belief
+  * time
+
+---
+
+# ⚔️ COMBAT MECHANICS (LIGHT BUT TENSE)
+
+---
+
+## System
+
+* Hit detection (simple)
+* Cooldown-based
+
+---
+
+## Factors
+
+* Weapon type
+* stamina
+* position
+
+---
+
+## Horror Twist
+
+* Sometimes hits don’t register (late-game distortion)
+
+---
+
+# 🧠 NPC WORLD INTERACTION
+
+---
+
+## NPCs
+
+* Move independently
+* Work jobs
+* React to events
+
+---
+
+## Emergent Behavior
+
+* Theft
+* Violence
+* Relationships
+
+---
+
+# 🌑 BLIGHT GLOBAL MECHANIC
+
+---
+
+## Spread
+
+* Tile to tile
+* Faster in:
+
+  * water
+  * crops
+
+---
+
+## Effects
+
+* Visual corruption
+* Gameplay changes
+* NPC behavior shift
+
+---
+
+# 🔁 SYSTEM INTERACTION EXAMPLE
+
+**Rain + Blight + Farm**
+→ Crops grow faster
+→ But become toxic
+→ NPC eats → gets sick
+→ Doctor investigates
+→ Leads to story event
+
+---
+
+# 🎯 DESIGN PRINCIPLE (IMPORTANT)
+
+Everything must:
+
+* interact with something else
+* create consequences
+* support emergent storytelling
+
+---
+
+# 🚀 NEXT STEP
+
+Now that you have:
+
+✔ Story system
+✔ World design
+✔ Character system
+✔ Audio system
+✔ Gameplay + physics
+

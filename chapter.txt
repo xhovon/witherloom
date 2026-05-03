@@ -1,0 +1,258 @@
+🕯️ WITHERBLOOM VALE — FULL CAMPAIGN STRUCTURE
+GLOBAL STRUCTURE
+Prologue + 8 Chapters + Endgame
+Each chapter = 1 in-game week (fits your “World Tick” system)
+Each chapter contains:
+Core Event (always happens)
+Role Variations
+Belief Variations
+Horror Escalation Layer
+Oracle Events (randomized)
+🌑 PROLOGUE — “THE ROAD THAT REMEMBERS”
+Core Event
+
+You arrive at Witherbloom Vale.
+
+The road loops once.
+You pass the same tree twice.
+A villager greets you… then appears ahead of you again.
+Key Mechanics Introduced
+Stamina / Health
+Dialogue tone (belief-based)
+First relationship
+Role Variations
+Farmer: Recognizes land that “should not be fertile”
+Doctor: Sees a corpse with no decay
+Postman: Carries a letter already opened… by you
+Thief: Notices someone following them since before arrival
+Guard: Village defenses are strangely misaligned
+Homeless: Denied entry to multiple homes
+Magician Apprentice: Sees faint distortions in light
+Vampire: Feels drawn to one specific house
+Ghost: Remembers dying here (fragment only)
+Fox: Smells something dead beneath the soil
+Belief Variations
+Science → “Environmental anomaly”
+Old Ways → “Land spirit disturbed”
+Religious → “Test or punishment”
+Fatalist → “This already happened”
+🌘 CHAPTER 1 — “THE FIRST ROT”
+Core Event
+
+Crops fail. Animals act erratically. A villager disappears.
+
+Gameplay Focus
+Basic survival
+NPC routines
+First investigation
+Role Branches
+Farmer: Crops grow overnight, then rot instantly
+Herbalist: Finds plants that mimic medicine but poison slowly
+Doctor: First patient shows “memory fever”
+Guard: Night patrol hears footsteps in empty fields
+Newspaperman: Writes first Blight report
+Thief: Finds hidden food hoards
+Patient: Other patients vanish from clinic
+Horror Layer
+Livestock born wrong (extra limbs, no eyes)
+Wells taste metallic
+Children talk to “someone underground”
+🌒 CHAPTER 2 — “THE SECOND SELF”
+Core Event
+
+Multiple villagers report seeing duplicates.
+
+Gameplay Focus
+Social suspicion system
+Trust / paranoia mechanics
+Role Branches
+Postman: Delivers letters written by “duplicates”
+Guard: Ordered to arrest someone who is “in two places”
+Doctor: Cannot medically distinguish real vs duplicate
+Thief: Uses duplicates to frame others
+Artisan: Crafts begin changing after completion
+Ghost: Sees BOTH versions clearly
+Vampire: Blood tastes different between copies
+Belief Variations
+Science → cloning / infection theory
+Old Ways → “spirit reflection”
+Moon → duality is natural
+Horror Layer
+One duplicate always disappears at night
+The other begins behaving incorrectly
+🌓 CHAPTER 3 — “THE NIGHT WITHOUT END”
+Core Event
+
+One night lasts too long.
+
+Gameplay Focus
+Night danger system
+Fear / sanity pressure
+Role Branches
+Guard: Patrol never ends
+Farmer: Crops grow ONLY at night now
+Postman: No morning deliveries arrive
+Homeless: Night creatures ignore you… or follow you
+Magician: Time distortion becomes measurable
+Fox: Night is safer than day
+Horror Layer
+Clocks stop
+Lamps refuse to light
+Some NPCs “freeze” mid-action
+🌔 CHAPTER 4 — “THE BURIED VILLAGE”
+Core Event
+
+A sinkhole opens → reveals ruins below
+
+Gameplay Focus
+Exploration (dungeons)
+Lore discovery
+Role Branches
+Miner: Finds structured tunnels
+Doctor: Old mass grave
+Herbalist: Ancient roots spreading upward
+Thief: Hidden vaults
+Ghost: FULL MEMORY FLASH (partial truth)
+Chronicler’s Kin: Journal reacts for first time
+Major Reveal
+
+The vale existed before—and was destroyed.
+
+Horror Layer
+Skeletons arranged in rituals
+Names match current villagers
+🌕 CHAPTER 5 — “THE HOLLOW ROOT”
+Core Event
+
+You discover the Blight source: a living root network
+
+Gameplay Focus
+Choice-driven quests
+Alignment begins
+Role Branches
+Farmer: Root is beneath all farmland
+Doctor: Root behaves like a brain
+Magician: Root reacts to will
+Vampire: Root “speaks” directly
+Ghost: Root recognizes you
+Horror Layer
+Roots move slightly
+Whispering grows louder
+NPCs begin worshipping or denying it
+🌖 CHAPTER 6 — “THE FRACTURE”
+Core Event
+
+Village splits into factions
+
+Factions
+Burn the Vale
+Study the Blight
+Worship it
+Ignore it
+Gameplay Focus
+Politics
+Alliances
+Betrayal
+Role Impact
+Guard: Enforces law → or becomes weapon
+Newspaperman: Shapes public opinion
+Shopkeeper’s Child: Controls supply chains
+Outcast: Gains power in chaos
+Thief: Profits from division
+Horror Layer
+Public executions
+Riots
+Secret cult formation
+🌗 CHAPTER 7 — “THE MEMORY HARVEST”
+Core Event
+
+People begin losing identity
+
+Gameplay Focus
+Identity system
+Memory-based mechanics
+Effects
+NPCs forget relationships
+Names disappear from records
+Player choices get rewritten
+Role Branches
+Doctor: Tracks “identity decay”
+Postman: Letters addressed to no one
+Ghost: Gains strength as others fade
+Vampire: Feeding restores memory… temporarily
+Horror Layer
+You forget your own backstory options
+Dialogue choices change mid-conversation
+🌘 CHAPTER 8 — “THE ROOT AWAKENS”
+Core Event
+
+The Hollow Root becomes active
+
+Gameplay Focus
+Final preparation
+Endgame path locking
+World Changes
+Terrain shifts
+Buildings distort
+Dead return (not zombies—echoes)
+Role Climax Moments
+Farmer: Must destroy or protect land
+Doctor: Can attempt cure
+Guard: Final stand
+Thief: Escape route discovery
+Ghost: Full truth revealed (you tried to stop this before)
+Vampire: Choice to merge with Root
+🔥 ENDGAME — “WHAT REMAINS”
+Ending Paths (depend on ALL systems)
+1. 🔥 Burn the Vale
+Entire map destroyed
+Survivors minimal
+Blight contained… maybe
+2. 🌑 Seal the Root
+Cycle continues
+Future generations doomed
+3. 🧪 Cure the Blight (Hardest)
+Requires:
+Doctor/science path
+Ritual knowledge
+High relationships
+Village survives, but changed forever
+4. 👁️ Become the Keeper
+Player becomes part of system
+Gains control → loses identity
+5. 🌍 Let it Spread (Bad Ending)
+Vale becomes origin of global horror
+🧬 SUPER-UNIQUE CHARACTER OVERRIDES
+
+These override normal campaign flow:
+
+🩸 Vampire Campaign Twist
+Sun = damage mechanic
+Blood = truth mechanic
+Final choice: destroy Root OR become its avatar
+👻 Ghost Campaign Twist
+Sees past timelines
+Cannot interact physically
+Ending: escape cycle OR remain bound forever
+🦊 Fox Campaign Twist
+No dialogue system
+Pure environmental storytelling
+Knows truth earliest, cannot communicate it
+🔪 Serial Killer Twist
+You are ALSO a horror element
+Can manipulate chaos
+Ending depends on whether Root controls you
+🧠 ORACLE (AI STORYTELLER) INTEGRATION
+
+Each week:
+
+Picks 2–5 dynamic events:
+murder
+betrayal
+miracle
+disappearance
+love
+Modifies:
+NPC trust
+faction power
+rumor spread
